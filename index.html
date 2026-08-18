@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Galo Reyes — Portfolio</title>
+  <meta name="description" content="Galo Reyes — CS student building systems software in C. Kernel drivers, file systems, and dental-tech projects." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Open Graph (controls the preview shown when this link is shared/texted/QR-scanned) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Galo Reyes — Portfolio" />
+  <meta property="og:description" content="CS student building systems software in C — kernel drivers, file systems, and dental-tech projects." />
+  <meta property="og:url" content="https://galoreyes00.github.io" />
+  <meta property="og:image" content="https://galoreyes00.github.io/favicon.svg" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Galo Reyes — Portfolio" />
+  <meta name="twitter:description" content="CS student building systems software in C — kernel drivers, file systems, and dental-tech projects." />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header class="nav">
+    <a href="#hero" class="nav__logo">Galo<span>.</span></a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Hi, my name is</p>
+      <h1 class="hero__name">Galo Reyes.</h1>
+      <h2 class="hero__tagline">I build things with code.</h2>
+      <p class="hero__desc">
+        <!-- EDIT: one-line pitch about who you are -->
+        A computer science student working in C, C++, and Java, exploring
+        software careers in health and dental technology — from AI diagnostics
+        to practice management systems.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn">View my work</a>
+        <a href="Galo_Reyes_Resume.docx" class="btn btn--ghost" download>Download resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About ===== -->
+  <section class="section" id="about">
+    <h2 class="section__title"><span>01.</span> About Me</h2>
+    <div class="about">
+      <div class="about__text">
+        <!-- EDIT: your real bio -->
+        <p>
+          Hello! I'm Galo, and I enjoy building software that solves real
+          problems. My journey into programming started with a curiosity for
+          how things work under the hood, and that curiosity has stuck with me.
+        </p>
+        <p>
+          I work mainly in low-level and object-oriented languages, and I'm
+          always looking for the next thing to learn. When I'm not coding, I'm
+          usually exploring new tools and ideas.
+        </p>
+        <p>A few technologies I've been working with:</p>
+        <ul class="about__list">
+          <li>C</li>
+          <li>Java</li>
+          <li>C++</li>
+          <li>Git &amp; GitHub</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+        </ul>
+      </div>
+      <div class="about__photo">
+        <!-- EDIT: replace with your photo -> <img src="me.jpg" alt="Galo Reyes"> -->
+        <div class="about__photo-placeholder">Your photo here</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section class="section" id="skills">
+    <h2 class="section__title"><span>02.</span> Skills</h2>
+    <div class="skills">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul>
+          <li>C</li>
+          <li>C++</li>
+          <li>Java</li>
+          <li>SQL (MySQL)</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Systems</h3>
+        <ul>
+          <li>Linux Kernel Modules</li>
+          <li>POSIX Threads</li>
+          <li>File Systems</li>
+          <li>Low-Level I/O</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools</h3>
+        <ul>
+          <li>Git &amp; GitHub</li>
+          <li>Command Line</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section class="section" id="projects">
+    <h2 class="section__title"><span>03.</span> Projects</h2>
+    <div class="projects">
+      <!-- EDIT each card: title, description, tags, links -->
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__icon">&#9633;</span>
+          <div class="project-card__links">
+            <a href="#" aria-label="Live demo">Demo</a>
+          </div>
+        </div>
+        <h3>Dental Practice Booking Demo</h3>
+        <p>
+          Patient self-scheduling demo built for a real pediatric dentistry &amp;
+          orthodontics practice: online booking with insurance intake, an AI
+          assistant, QR-code booking, and an SMS fallback — pitched to the
+          practice owner.
+        </p>
+        <ul class="project-card__tags">
+          <li>JavaScript</li>
+          <li>Dental Tech</li>
+          <li>UX</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__icon">&#9633;</span>
+          <!-- EDIT: once this repo is public, replace with <a href="https://github.com/GaloReyes00/...">GitHub</a> -->
+          <div class="project-card__links project-card__links--pending">Code available on request</div>
+        </div>
+        <h3>Linux Kernel Device Driver</h3>
+        <p>
+          A loadable character device driver that performs reversible key-based
+          encryption on byte streams. Full file operations plus an ioctl control
+          channel, with mutex-protected state for safe concurrent access.
+        </p>
+        <ul class="project-card__tags">
+          <li>C</li>
+          <li>Linux Kernel</li>
+          <li>ioctl</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__icon">&#9633;</span>
+          <!-- EDIT: once this repo is public, replace with <a href="https://github.com/GaloReyes00/...">GitHub</a> -->
+          <div class="project-card__links project-card__links--pending">Code available on request</div>
+        </div>
+        <h3>Custom Unix-Style File System</h3>
+        <p>
+          Team-built file system from scratch on a raw block device: volume
+          formatting, free-space management, hierarchical directories, and a
+          buffered I/O layer serving byte-level reads over 512-byte blocks.
+        </p>
+        <ul class="project-card__tags">
+          <li>C</li>
+          <li>File Systems</li>
+          <li>Team of 4</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <span class="project-card__icon">&#9633;</span>
+          <!-- EDIT: once this repo is public, replace with <a href="https://github.com/GaloReyes00/...">GitHub</a> -->
+          <div class="project-card__links project-card__links--pending">Code available on request</div>
+        </div>
+        <h3>Multithreaded Data Processor</h3>
+        <p>
+          Concurrent statistics engine over a large police dispatch dataset —
+          per-call-type response-time distributions computed with a
+          per-bucket-locked hash table so threads on different call types
+          never block each other.
+        </p>
+        <ul class="project-card__tags">
+          <li>C</li>
+          <li>pthreads</li>
+          <li>Concurrency</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section section--contact" id="contact">
+    <h2 class="section__title section__title--center"><span>04.</span> Get In Touch</h2>
+    <p class="contact__text">
+      I'm open to new opportunities and always happy to connect. Feel free to
+      reach out and I'll get back to you.
+    </p>
+    <a href="mailto:galojreyes@gmail.com" class="btn">Say Hello</a>
+    <div class="contact__qr">
+      <img src="qr_contact_card.png" alt="Scan to save my contact info" width="140" height="140" />
+      <p>Scan to save my contact</p>
+    </div>
+    <div class="contact__socials">
+      <!-- EDIT: replace with your real profile URLs -->
+      <a href="https://github.com/GaloReyes00" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/[you]" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:galojreyes@gmail.com">Email</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built by Galo Reyes &middot; 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
